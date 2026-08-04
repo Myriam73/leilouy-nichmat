@@ -84,7 +84,8 @@ const categories = [
       "Donner de la Tsédaka",
       "Prélever son Maasser",
       "Éviter les musiques non juives",
-      "Éviter les vidéos ou contenus inappropriés"
+      "Éviter les vidéos ou contenus inappropriés",
+      "Autre (Ma propre idée d'engagement)"
     ]
   }
 ];
