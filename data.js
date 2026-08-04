@@ -18,7 +18,7 @@ const categories = [
   {
     id: "parole",
     titre: "Parole",
-    image: "images/parole.jpg",
+    image: "images/parole1.jpg",
     mitsvot: [
       "Faire attention au Lachon Hara",
       "Étudier une halakha de Lachon Hara ou une autre halakha",
