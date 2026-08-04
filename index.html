@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Leïlouy Nichmat</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div id="bandeau-engagements" class="bandeau-engagements d-none">
+    🤍 Déjà
+    <strong id="nombre-total-engagements">0</strong>
+    engagements ont été pris pour le Léïlouy Nichmat de Madame Azogui.
+</div>
+    <section class="hero">
+
+      <div class="container text-center">
+
+        <img
+          src="images/bougie.jpg"
+          alt="Portrait"
+          class="photo"
+        >
+        <h1>Leïlouy Nichmat</h1>
+
+        <h2>Madame Azogui</h2>
+
+
+        <p class="texte-introduction">
+          On l'a toutes connue, avec son sourire, sa douceur et sa bienveillance.
+
+Toujours présente pour aider chacune, elle était une véritable deuxième maman pour ses élèves.<br>
+
+Prenons une mitsva, même pour une courte durée, pour l'élévation de sa néchama.<br>
+
+<strong>Chaque engagement est un mérite supplémentaire pour elle.</strong>
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-gold"
+          id="commencer"
+        >
+          Je prends une mitsva
+          <i class="bi bi-arrow-down ms-2"></i>
+        </button>
+
+      </div>
+
+    </section>
+
+    
+
+    <section id="mitsvot" class="section-mitsvot">
+
+      <div class="container">
+
+        <div class="titre-section text-center">
+
+          <p class="sur-titre">Choisissez votre engagement</p>
+
+          <h2>Quelle mitsva souhaitez-vous prendre sur vous ?</h2>
+
+          <p>
+            Cliquez sur une catégorie pour découvrir les engagements
+            proposés.
+          </p>
+
+        </div>
+
+        <div
+          class="row g-4 justify-content-center"
+          id="categories-container"
+        ></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Fenêtre de choix de la mitsva et de la durée -->
+
+  <div
+    class="modal fade"
+    id="engagementModal"
+    tabindex="-1"
+    aria-labelledby="engagementModalLabel"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <div>
+
+            <p class="modal-sur-titre">Prendre une mitsva</p>
+
+            <h2
+              class="modal-title"
+              id="engagementModalLabel"
+            >
+              Choisissez votre engagement
+            </h2>
+
+          </div>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Fermer"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <form id="engagement-form">
+
+            <section class="etape-formulaire">
+
+              <h3>
+                <span>1</span>
+                Choisissez une mitsva
+              </h3>
+
+              <div
+                id="liste-mitsvot"
+                class="liste-options"
+              ></div>
+
+            </section>
+
+            <section class="etape-formulaire">
+
+              <h3>
+                <span>2</span>
+                Choisissez une durée
+              </h3>
+
+              <div
+                id="liste-durees"
+                class="grille-durees"
+              ></div>
+
+            </section>
+
+            <div class="rappel-intention">
+
+              <i class="bi bi-heart"></i>
+
+              <p>
+                Je prends sur moi, avec l'aide d'Hachem, cette mitsva pour
+                le Leïlouy Nichmat de Madame Azogui.
+              </p>
+
+            </div>
+
+            <p
+              id="message-erreur"
+              class="message-erreur"
+              role="alert"
+            ></p>
+
+            <button
+              type="submit"
+              id="bouton-validation"
+              class="btn btn-gold bouton-validation"
+            >
+              Valider mon engagement
+              <i class="bi bi-check-circle ms-2"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer-site">
+  <div class="container footer-contenu">
+
+    <p class="footer-titre">
+      Leïlouy Nichmat de Madame Azogui
+    </p>
+
+    <nav class="footer-liens" aria-label="Informations légales">
+      <a href="mentions-legales.html">Mentions légales</a>
+
+      <span aria-hidden="true">•</span>
+
+      <a href="confidentialite.html">
+        Politique de confidentialité
+      </a>
+
+      <span aria-hidden="true">•</span>
+
+      <a href="cgu.html">
+        Conditions d’utilisation
+      </a>
+    </nav>
+
+    <p class="footer-copyright">
+      © <span id="annee-footer"></span> — Tous droits réservés
+    </p>
+
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="data.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
+
+
