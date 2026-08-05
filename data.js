@@ -71,7 +71,8 @@ const categories = [
       "Faire la paix avec une personne",
       "Appeler une personne seule ou dans le besoin",
       "Faire un acte de Hessed",
-      "Éviter de susciter la jalousie"
+      "Éviter de susciter la jalousie",
+      "Pardonner à une personne qui nous a blessé"
     ]
   },
   {
